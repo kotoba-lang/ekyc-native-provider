@@ -1,8 +1,12 @@
 {:paths ["src"]
- :deps {kotoba-lang/ekyc {:local/root "../ekyc"}
-        kotoba-lang/mrz {:local/root "../mrz"}
-        kotoba-lang/face-liveness {:local/root "../face-liveness"}
-        kotoba-lang/face-match {:local/root "../face-match"}}
+ :deps {kotoba-lang/ekyc {:git/url "https://github.com/kotoba-lang/ekyc.git"
+                                     :git/sha "a11a46c7aa5c389a0a6799a7fc6f4584d6ad823a"}
+        kotoba-lang/mrz {:git/url "https://github.com/kotoba-lang/mrz.git"
+                                     :git/sha "5fd0487d60dfc70d530e29df8bf1fcc1d02ec30c"}
+        kotoba-lang/face-liveness {:git/url "https://github.com/kotoba-lang/face-liveness.git"
+                                     :git/sha "103a89d339777f0d8ea19d8b69299d082842b80d"}
+        kotoba-lang/face-match {:git/url "https://github.com/kotoba-lang/face-match.git"
+                                     :git/sha "0ae505f7d5e83951d3cf4661e4e2cbe00d12f5b5"}}
  :aliases
  {:test {:extra-paths ["test"]
          :extra-deps {io.github.cognitect-labs/test-runner
