@@ -1,5 +1,5 @@
 (ns ekyc-native-provider.core-test
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [ekyc.adapters.provider :as ekyc-provider]
             [ekyc-native-provider.core :as core]
             [ekyc-native-provider.ports :as ports]
